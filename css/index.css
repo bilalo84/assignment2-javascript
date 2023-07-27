@@ -1,0 +1,41 @@
+body{
+    background-color: #f7ecde;
+}
+h1{
+font-family: 'Pacifico', cursive;
+font-size: 50px;
+position: relative;
+
+}
+h1::before{
+    content: "";
+    width: 100%;
+    height: 40%;
+    background-color: #fec260;
+    position: absolute;
+    z-index: -1;
+    transition: height 350ms;
+    bottom: 0px;
+}
+h1:hover::before{
+    height: 70%;
+}
+.bookmark-form{
+    border-top:  2px dotted black;
+    border-bottom:  2px dotted black;
+   
+}
+h2{
+ 
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.addShadow:focus{
+    box-shadow : 0 0 0 0.25rem rgb(220 38 38 / 25%);
+    border:rgb(220 38 38 / 25%) solid 1px ;
+}
